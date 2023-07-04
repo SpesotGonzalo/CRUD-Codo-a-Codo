@@ -1,17 +1,18 @@
 function guardar(){
     let mar = document.getElementById('marca').value;
-    let mod = document.getElementById('modelo').value;
+    let mod = document.getElementById('modelo').value;    
+    let i = document.getElementById('imagen').value;
     let p = document.getElementById('precio').value;
     let s = document.getElementById('stock').value;
-    let i = document.getElementById('imagen').value;
+
     let c = document.getElementById('color').value;
 
     let auto = {
         marca: mar,
         modelo: mod,
+        imagen: i,
         precio: p,
         stock: s,
-        imagen: i,
         color : c
     };
 

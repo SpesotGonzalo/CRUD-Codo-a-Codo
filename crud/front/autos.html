@@ -17,7 +17,7 @@
 
   <main>
     <div id="app" class="container">
-      <h1>Productos</h1>
+      <h1>Automoviles</h1>
       
       <section v-if="error">
         <p>Lo sentimos, no podemos mostrarte los datos solicitados en este momento</p>
@@ -33,9 +33,7 @@
             </div>
         </section>
         
-        <section v-else>
-          <a class="btn btn-success" href="auto_nuevo.html">Agregar producto</a>
-
+       
           <div class="table-responsive" style="margin-top: 1rem;">
             <table class="table table-bordered">
               <thead>
@@ -56,7 +54,7 @@
                   <td>{{a.marca}}</td>
                   <td>{{a.modelo}}</td>
                   <td>
-                    <img :src="a.imagen" :alt="a.marca + ' ' + a.modelo">
+                    <img id ="imagenesBase":src="a.imagen" :alt="a.marca + ' ' + a.modelo">
                   </td>
                   <td>{{a.precio}}</td>
                   <td>{{a.stock}}</td>
@@ -68,8 +66,14 @@
                 </tr>
               </tbody>
             </table>
+
+            <section v-else>
+              <a class="btn btn-success" href="auto_nuevo.html">Agregar automovil</a>
+            </section>
+            <p class="oculto"></p>
+            <div id="espacio"></div>
           </div>
-        </section>
+        
         
       </section>
       

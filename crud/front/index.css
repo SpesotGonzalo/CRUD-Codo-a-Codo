@@ -24,3 +24,27 @@ img {
      height: 150px;
     
 }
+
+#imagenesBase { 
+     width: 100px;
+     height: 90px;
+}
+
+#espacio { 
+      padding-top: 4rem;
+}
+
+#aparecer { 
+     display: none;
+}
+
+.botonEquipo { 
+     padding: 1rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.oculto { 
+      display: none;
+}
