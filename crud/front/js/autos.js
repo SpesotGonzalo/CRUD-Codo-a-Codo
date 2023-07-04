@@ -4,7 +4,7 @@ createApp({
     data(){
         return{
             autos: [],
-            url: 'http://127.0.0.1:5000/auto',
+            url: 'https://gonzalospesotcc.pythonanywhere.com/autos',
             cargando: true,
             error: false
         }

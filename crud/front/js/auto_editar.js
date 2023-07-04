@@ -37,7 +37,7 @@ function modificar(){
         color : c
     };
 
-    let url = 'http://127.0.0.1:5000/autos'
+    let url = 'https://gonzalospesotcc.pythonanywhere.com/autos'
     let options = {
         body: JSON.stringify(auto),
         method: 'POST',
